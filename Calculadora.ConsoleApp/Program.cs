@@ -4,6 +4,8 @@
 //Nossa calculadora deve ter a possibilidade de dividir dois números
 //Nossa calculadora deve permitir que o usuário continue utilizando o sistema até decidir sair
 
+
+
 while (true)
 {
     Console.Clear();

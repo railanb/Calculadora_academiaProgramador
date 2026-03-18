@@ -12,3 +12,18 @@ D:\ACADEMIA_PROGRAMADOR\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\ref
 D:\ACADEMIA_PROGRAMADOR\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.pdb
 D:\ACADEMIA_PROGRAMADOR\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.genruntimeconfig.cache
 D:\ACADEMIA_PROGRAMADOR\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\ref\Calculadora.ConsoleApp.dll
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\bin\Debug\net10.0\Calculadora.ConsoleApp.exe
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\bin\Debug\net10.0\Calculadora.ConsoleApp.deps.json
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\bin\Debug\net10.0\Calculadora.ConsoleApp.runtimeconfig.json
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\bin\Debug\net10.0\Calculadora.ConsoleApp.dll
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\bin\Debug\net10.0\Calculadora.ConsoleApp.pdb
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.AssemblyInfoInputs.cache
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.AssemblyInfo.cs
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.csproj.CoreCompileInputs.cache
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.sourcelink.json
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.dll
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\refint\Calculadora.ConsoleApp.dll
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.pdb
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.genruntimeconfig.cache
+D:\RAILAN BRANDAO\ACAD PROG\Calculadora_academiaProgramador\Calculadora.ConsoleApp\obj\Debug\net10.0\ref\Calculadora.ConsoleApp.dll
