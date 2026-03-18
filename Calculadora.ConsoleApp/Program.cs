@@ -35,6 +35,7 @@ while (true)
         return;
     }
 
+    // validação para o menu de seleção
     if (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4" && operacao != "5" && operacao != "6")
     {
         Console.WriteLine("Operação inválida. saindo do sistema...");
@@ -42,6 +43,7 @@ while (true)
         return;
     }
 
+    //operação da tabuada
     if (operacao == "5")
     {
         Console.Clear();
@@ -58,6 +60,7 @@ while (true)
         Console.WriteLine("Digite agora a operação da tabuada: ");
         string operTabuada = Console.ReadLine();
 
+        //validação menu de seleção
         if (operTabuada != "1" && operTabuada != "2" && operTabuada != "3")
         {
             Console.WriteLine("Operação inválida. Clique ENTER para sair da tabuada...");
@@ -66,7 +69,8 @@ while (true)
         }
 
         Console.WriteLine("A tabuada do número " + numTabuada + " é: ");
-
+        
+        // Laço da tabuada, usuário escolhe a operação matemática
         for (int contador = 1; contador <= 10; contador++)
         {
             //float resultTabuada = numTabuada + contador;
@@ -101,6 +105,8 @@ while (true)
         Console.WriteLine("Histórico de Operações");
         Console.WriteLine("-------------------------------");
 
+
+        //laço que percorre o array e mostra o historico
         for (int contador = 0; contador < historicOperacoes.Length; contador++)
         {
             if (historicOperacoes[contador] != null)
@@ -116,6 +122,7 @@ while (true)
     }
      
 
+    //operações matematicas 
     Console.Write("Digite o primeiro número: ");
     string primeiroNumero = Console.ReadLine();
     float numero1 = Convert.ToSingle(primeiroNumero);
@@ -149,8 +156,9 @@ while (true)
         resultado = numero1 / numero2;
         textOperacao = $"{numero1} / {numero2} = {resultado}";
     }
-
-    if (contadorOperacoes < historicOperacoes.Length)
+    //validação para armazenar em um array as operações realizadas
+    //não adiciona a tabuada no array
+    if (contadorOperacoes < historicOperacoes.Length) //em caso de atingir o limite do array
     {    
         historicOperacoes[contadorOperacoes] = textOperacao;
         contadorOperacoes++;
