@@ -7,6 +7,9 @@
 //Nossa calculadora deve produzir a tabuada de um número informado
 //Nossa calculadora deve armazenar historico de operações
 
+string[] historicOperacoes =  new string[100];
+int contadorOperacoes = 0;
+
 
 while (true)
 {
@@ -20,6 +23,7 @@ while (true)
     Console.WriteLine("3 - Multiplicar");
     Console.WriteLine("4 - Dividir");
     Console.WriteLine("5 - Tabuada");
+    Console.WriteLine("6 - Histórico da operação");
     Console.WriteLine("S - Sair");
     Console.WriteLine("-------------------------------");
     Console.Write("Escolha a operação desejada: ");
@@ -31,7 +35,7 @@ while (true)
         return;
     }
 
-    if (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4" && operacao != "5")
+    if (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4" && operacao != "5" && operacao != "6")
     {
         Console.WriteLine("Operação inválida. saindo do sistema...");
         Console.ReadKey();
@@ -90,6 +94,26 @@ while (true)
         Console.ReadLine();
         continue;
     }
+
+    if (operacao == "6")
+    {
+        Console.WriteLine("-------------------------------");
+        Console.WriteLine("Histórico de Operações");
+        Console.WriteLine("-------------------------------");
+
+        for (int contador = 0; contador < historicOperacoes.Length; contador++)
+        {
+            if (historicOperacoes[contador] != null)
+            {
+            Console.WriteLine(historicOperacoes[contador]);
+                
+            }
+        }
+
+        Console.WriteLine("Clique ENTER para continuar...");
+        Console.ReadLine();
+        continue;
+    }
      
 
     Console.Write("Digite o primeiro número: ");
@@ -101,16 +125,20 @@ while (true)
     float numero2 = Convert.ToSingle(segundoNumero);
 
     float resultado = 0;
+    string textOperacao;
 
     if (operacao == "1")
     {
         resultado = numero1 + numero2;
+        textOperacao = $"{numero1} + {numero2} = {resultado}";
     } else if (operacao  == "2")
     {
         resultado = numero1 - numero2;
+        textOperacao = $"{numero1} - {numero2} = {resultado}";
     }else if (operacao == "3")
     {
         resultado = numero1 * numero2;
+        textOperacao = $"{numero1} x {numero2} = {resultado}";
     } else
     {
         if (numero2 == 0)
@@ -119,6 +147,19 @@ while (true)
             return;
         }
         resultado = numero1 / numero2;
+        textOperacao = $"{numero1} / {numero2} = {resultado}";
+    }
+
+    if (contadorOperacoes < historicOperacoes.Length)
+    {    
+        historicOperacoes[contadorOperacoes] = textOperacao;
+        contadorOperacoes++;
+    } else
+    {
+        Console.WriteLine("Não há espaços disponíveis em memória");
+        Console.WriteLine("Por favor, fechando o programa... Clique ENTER");
+        Console.ReadLine();
+        return;
     }
 
     Console.WriteLine("O resultado do calculo é " + resultado);
