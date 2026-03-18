@@ -4,6 +4,8 @@
 //Nossa calculadora deve ter a possibilidade de dividir dois números
 //Nossa calculadora deve permitir que o usuário continue utilizando o sistema até decidir sair
 
+//Nossa calculadora deve produzir a tabuada de um número informado
+//Nossa calculadora deve armazenar historico de operações
 
 
 while (true)
@@ -29,14 +31,36 @@ while (true)
         return;
     }
 
-    if (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4")
+    if (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4" && operacao != "5")
     {
         Console.WriteLine("Operação inválida. saindo do sistema...");
         Console.ReadKey();
         return;
     }
 
-    //um for aqui para o loop da tabuada
+    if (operacao == "5")
+    {
+        Console.Clear();
+        Console.WriteLine("-------------------------------");
+        Console.WriteLine("Bem-vindo à Tabuada!");
+        Console.WriteLine("-------------------------------");
+        Console.Write("Digite um número inteiro: ");
+        string numTabuadaSt = Console.ReadLine();
+        float numTabuada = Convert.ToSingle(numTabuadaSt);
+
+        Console.WriteLine("A tabuada do número " + numTabuada + " é: ");
+
+        for (int contador = 1; contador <= 10; contador++)
+        {
+            float resultTabuada = numTabuada + contador;
+            Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+        }
+
+
+        Console.WriteLine("Clique ENTER para continuar...");
+        Console.ReadLine();
+        continue;
+    }
      
 
     Console.Write("Digite o primeiro número: ");
