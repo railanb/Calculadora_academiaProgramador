@@ -79,7 +79,7 @@ while (true)
                     break;
                 case 2:
                     resultTabuada = numTabuada - contador;
-                    Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+                    Console.WriteLine(numTabuada + " - " + contador + " = " + resultTabuada);
                     break;
                 default:
                     resultTabuada = numTabuada + contador;
