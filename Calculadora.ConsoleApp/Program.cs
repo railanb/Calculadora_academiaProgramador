@@ -48,12 +48,41 @@ while (true)
         string numTabuadaSt = Console.ReadLine();
         float numTabuada = Convert.ToSingle(numTabuadaSt);
 
+        Console.WriteLine("1 - Multiplicar");
+        Console.WriteLine("2 - Subtrair");
+        Console.WriteLine("3 - Somar");
+        Console.WriteLine("Digite agora a operação da tabuada: ");
+        string operTabuada = Console.ReadLine();
+
+        if (operTabuada != "1" && operTabuada != "2" && operTabuada != "3")
+        {
+            Console.WriteLine("Operação inválida. Clique ENTER para sair da tabuada...");
+            Console.ReadKey();
+            continue;
+        }
+
         Console.WriteLine("A tabuada do número " + numTabuada + " é: ");
 
         for (int contador = 1; contador <= 10; contador++)
         {
-            float resultTabuada = numTabuada + contador;
-            Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+            //float resultTabuada = numTabuada + contador;
+            //Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+            int opr = Convert.ToInt32(operTabuada);
+            switch (opr) {
+                case 1:
+                    float resultTabuada = numTabuada * contador;
+                    Console.WriteLine(numTabuada + " x " + contador + " = " + resultTabuada);
+                    break;
+                case 2:
+                    resultTabuada = numTabuada - contador;
+                    Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+                    break;
+                default:
+                    resultTabuada = numTabuada + contador;
+                    Console.WriteLine(numTabuada + " + " + contador + " = " + resultTabuada);
+                    break;
+
+            }
         }
 
 
